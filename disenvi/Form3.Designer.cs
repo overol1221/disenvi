@@ -42,7 +42,21 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtNIM = new System.Windows.Forms.TextBox();
+            this.txtNama = new System.Windows.Forms.TextBox();
+            this.txtAlamat = new System.Windows.Forms.TextBox();
+            this.cbxJenisKelamin = new System.Windows.Forms.ComboBox();
+            this.cbxProdi = new System.Windows.Forms.ComboBox();
+            this.dtTanggalLahir = new System.Windows.Forms.DateTimePicker();
+            this.btnsaved = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             this.SuspendLayout();
@@ -103,6 +117,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -161,22 +176,158 @@
             this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
-            // flowLayoutPanel1
+            // label1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(26, 48);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
-            this.flowLayoutPanel1.TabIndex = 1;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(28, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "NIM";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(28, 79);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Nama";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(28, 112);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(90, 16);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Jenis Kelamin";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(28, 140);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 16);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Alamat";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(28, 172);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(90, 16);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Tanggal Lahir";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(31, 202);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(39, 16);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Prodi";
+            // 
+            // txtNIM
+            // 
+            this.txtNIM.Location = new System.Drawing.Point(163, 47);
+            this.txtNIM.Name = "txtNIM";
+            this.txtNIM.Size = new System.Drawing.Size(100, 22);
+            this.txtNIM.TabIndex = 7;
+            // 
+            // txtNama
+            // 
+            this.txtNama.Location = new System.Drawing.Point(163, 79);
+            this.txtNama.Name = "txtNama";
+            this.txtNama.Size = new System.Drawing.Size(100, 22);
+            this.txtNama.TabIndex = 8;
+            // 
+            // txtAlamat
+            // 
+            this.txtAlamat.Location = new System.Drawing.Point(163, 140);
+            this.txtAlamat.Name = "txtAlamat";
+            this.txtAlamat.Size = new System.Drawing.Size(100, 22);
+            this.txtAlamat.TabIndex = 9;
+            // 
+            // cbxJenisKelamin
+            // 
+            this.cbxJenisKelamin.FormattingEnabled = true;
+            this.cbxJenisKelamin.Location = new System.Drawing.Point(163, 110);
+            this.cbxJenisKelamin.Name = "cbxJenisKelamin";
+            this.cbxJenisKelamin.Size = new System.Drawing.Size(121, 24);
+            this.cbxJenisKelamin.TabIndex = 10;
+            // 
+            // cbxProdi
+            // 
+            this.cbxProdi.FormattingEnabled = true;
+            this.cbxProdi.Location = new System.Drawing.Point(163, 202);
+            this.cbxProdi.Name = "cbxProdi";
+            this.cbxProdi.Size = new System.Drawing.Size(121, 24);
+            this.cbxProdi.TabIndex = 11;
+            // 
+            // dtTanggalLahir
+            // 
+            this.dtTanggalLahir.Location = new System.Drawing.Point(163, 174);
+            this.dtTanggalLahir.Name = "dtTanggalLahir";
+            this.dtTanggalLahir.Size = new System.Drawing.Size(200, 22);
+            this.dtTanggalLahir.TabIndex = 12;
+            // 
+            // btnsaved
+            // 
+            this.btnsaved.Location = new System.Drawing.Point(42, 247);
+            this.btnsaved.Name = "btnsaved";
+            this.btnsaved.Size = new System.Drawing.Size(75, 23);
+            this.btnsaved.TabIndex = 13;
+            this.btnsaved.Text = "SAVE";
+            this.btnsaved.UseVisualStyleBackColor = true;
+            this.btnsaved.Click += new System.EventHandler(this.btnsaved_Click);
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(163, 246);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.TabIndex = 14;
+            this.btnClear.Text = "CLEAR";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(291, 246);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 15;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnsaved);
+            this.Controls.Add(this.dtTanggalLahir);
+            this.Controls.Add(this.cbxProdi);
+            this.Controls.Add(this.cbxJenisKelamin);
+            this.Controls.Add(this.txtAlamat);
+            this.Controls.Add(this.txtNama);
+            this.Controls.Add(this.txtNIM);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.bindingNavigator1);
             this.Name = "Form3";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
@@ -199,6 +350,20 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtNIM;
+        private System.Windows.Forms.TextBox txtNama;
+        private System.Windows.Forms.TextBox txtAlamat;
+        private System.Windows.Forms.ComboBox cbxJenisKelamin;
+        private System.Windows.Forms.ComboBox cbxProdi;
+        private System.Windows.Forms.DateTimePicker dtTanggalLahir;
+        private System.Windows.Forms.Button btnsaved;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnAdd;
     }
 }
